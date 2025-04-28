@@ -1,74 +1,74 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f0f2f5;
     margin: 0;
     padding: 0;
-}
-
-header {
-    background-color: #343a40;
-    color: white;
-    padding: 1em;
     text-align: center;
-}
-
-main {
-    padding: 20px;
+    background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
 }
 
 h1, h2, h3 {
-    text-align: center;
+    color: #00796b;
 }
 
-.portada {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-bottom: 5px solid #ff5722;
+nav {
+    margin: 20px 0;
 }
 
-.perfil, .icono, .sitio {
-    display: block;
-    margin: 20px auto;
-    max-width: 300px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
-}
-
-.botones {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.boton {
-    background-color: #ff5722;
-    color: white;
-    padding: 15px 30px;
+button {
+    padding: 12px 24px;
     margin: 10px;
-    text-decoration: none;
-    border-radius: 10px;
     font-size: 18px;
-}
-
-.boton:hover {
-    background-color: #e64a19;
-}
-
-.boton-volver {
-    display: block;
-    background-color: #607d8b;
+    background-color: #00796b;
     color: white;
-    width: 100px;
-    margin: 10px auto;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
+    border: none;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+.icono {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 iframe {
-    display: block;
+    width: 90%;
+    max-width: 560px;
+    height: 315px;
     margin: 20px auto;
-    max-width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    
+    button {
+        margin: 10px 20px;
+    }
+    
+    .icono, iframe {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
 }
